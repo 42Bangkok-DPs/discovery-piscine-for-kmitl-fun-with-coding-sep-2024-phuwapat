@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+}
+    .parallax p{
+        color: black;
+        font-size: 40px;
+    }
+.parallax-1 {
+    background-image: url('https://th.bing.com/th/id/OIP.3JagfHaSzs0lDLs3zTK7WwHaHa?rs=1&pid=ImgDetMain');
+}
+.parallax-2 {
+    background-image: url('https://th.bing.com/th/id/OIP.ZDvgYB8_iMi6TXsTNdj1XgHaE7?rs=1&pid=ImgDetMain');
+}
+.content {
+    padding: 100px;
+    text-align: center;
+    background-color: black;
+    font-size: 24px;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+}
