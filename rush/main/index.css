@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+    background-size: 800% 800%; 
+    animation: gradientMove 10s ease infinite; 
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientMove {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+
+.content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-grow: 1; 
+color: white;
+}
+
+.content h1, .content h2 {
+margin-bottom: 0.5rem;
+transition: transform 0.5s ease, opacity 0.5s ease; 
+}
+
+.content h1:hover, .content h2:hover {
+transform: scale(1.1); 
+opacity: 0.8; 
+}
+
+.btn-mem-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+h3.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
